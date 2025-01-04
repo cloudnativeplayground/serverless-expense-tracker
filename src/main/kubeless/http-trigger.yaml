@@ -1,0 +1,12 @@
+# http-trigger.yaml
+apiVersion: kubeless.io/v1beta1
+kind: HTTPTrigger
+metadata:
+  name: expensetracker-http-trigger
+  namespace: default
+spec:
+  function-name: expensetracker-function
+  path: /expensetracker
+  hostname: ""
+  gateway: ""
+  port: 8080

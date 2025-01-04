@@ -1,1 +1,67 @@
-target/
+# General
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Database
+*.db
+*.sqlite
+*.db-journal
+*.sql
+/db/migration/
+
+# Kubernetes
+*.kubeconfig
+*.yaml.swp
+k8s-debug/
+
+# Docker
+*.swp
+*.swo
+Dockerfile*
+docker-compose.yml
+.dockerignore
+
+# Temporary Files
+*.tmp
+*.temp
+
+# OS Generated Files
+*.bak
+*.swp
+*.swo
+
+# Coverage and Build Reports
+/coverage/
+/.nyc_output/
+/.circleci/
+/.travis/
+/test-results/
+/codecov.yml
+/test-outputs/
+
+# Others
+*.class
+*.log
+*.log.*

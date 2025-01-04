@@ -1,1 +1,26 @@
-key: value
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: test
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  flyway:
+    enabled: false
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework: INFO
+    org.hibernate: INFO

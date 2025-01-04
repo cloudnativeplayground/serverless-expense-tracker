@@ -1,0 +1,12 @@
+# kafka-trigger.yaml
+apiVersion: kubeless.io/v1beta1
+kind: KafkaTrigger
+metadata:
+  name: expensetracker-kafka-trigger
+  namespace: default
+spec:
+  function-selector:
+    matchLabels:
+      function: expensetracker-function
+  topic: expense-events
+  consumerGroup: expensetracker-consumer-group

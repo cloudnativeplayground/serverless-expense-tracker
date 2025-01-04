@@ -1,1 +1,20 @@
-replicas: 
+replicaCount: 1
+image:
+  repository: expensetracker
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+ingress:
+  enabled: false
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+nodeSelector: {}
+tolerations: []
+affinity: {}
